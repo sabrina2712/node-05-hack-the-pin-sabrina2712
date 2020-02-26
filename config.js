@@ -1,3 +1,3 @@
 module.exports = {
-  maxPin: 9999
+  maxPin: 99
 };

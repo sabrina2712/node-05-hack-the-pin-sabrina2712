@@ -29,7 +29,9 @@
   "homepage": "https://github.com/dci-ber-fbw21/node-05-hack-the-pin-oliverwebr#readme",
   "dependencies": {
     "axios": "^0.19.2",
-    "cli-progress": "^3.6.0",
+    "cli-progress": "^3.6.0"
+  },
+  "devDependencies": {
     "jest": "^25.1.0"
   }
 }

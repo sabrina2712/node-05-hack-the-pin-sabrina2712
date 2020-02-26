@@ -4,23 +4,27 @@ const { pinifyNumber } = require("./lib/randomPin");
 const { maxPin } = require("./config");
 
 async function main() {
-  for (let i = 0; i < maxPin; i++) {
-    const tryPin = pinifyNumber(i);
-    const { data } = await axios.get(`http://localhost:3000/${tryPin}`);
+  let pin;
+  console.time("TryPin");
 
+  for (let i = 0; i < maxPin; i++) {
+    pin = pinifyNumber(i, maxPin.toString().length);
+    const { data } = await axios.get(`http://localhost:3000/${pin}`);
+    console.log(pin);
     if (data) {
       console.log(
         `
-        Success the pin is: ${pinifyNumber(i, 4)}
+        Success the pin is: ${pin}
         failed attempts:  ${i - 1}
         `
       );
 
+      console.timeEnd("TryPin");
       break;
     }
   }
 
-  return null;
+  return pin;
 }
 
 main().catch((e) => {

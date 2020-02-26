@@ -14,7 +14,7 @@ async function main() {
   progress.start(maxPin, 0);
 
   for (let i = 0; i < maxPin; i++) {
-    const tryPin = pinifyNumber(i);
+    const tryPin = pinifyNumber(i, maxPin.toString().length);
     const { data } = await axios.get(`http://localhost:3000/${tryPin}`);
 
     progress.increment();
