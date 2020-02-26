@@ -1,0 +1,35 @@
+{
+  "name": "05-hack-the-pin-oliverwebr",
+  "version": "1.0.0",
+  "description": "Hacking PIN's",
+  "main": "\"\"",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest --watchAll",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dci-ber-fbw21/node-05-hack-the-pin-oliverwebr.git"
+  },
+  "keywords": [
+    "node",
+    "security",
+    "axios",
+    "server",
+    "http"
+  ],
+  "author": "Oliver Weber",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dci-ber-fbw21/node-05-hack-the-pin-oliverwebr/issues"
+  },
+  "homepage": "https://github.com/dci-ber-fbw21/node-05-hack-the-pin-oliverwebr#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cli-progress": "^3.6.0",
+    "jest": "^25.1.0"
+  }
+}
